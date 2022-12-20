@@ -1,6 +1,9 @@
 ﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+Console.Write("введите любое трёхзначное число");
+int num = Convert.ToInt32(Console.ReadLine());
+int lengt = num.ToString().Length;
 
-
-
-
-Console.WriteLine("Hello, World!");
+if (lengt < 3 || lengt > 3)
+    Console.WriteLine("Вы ввели не трехзначное число");
+else
+    Console.WriteLine(InCenter(num));
