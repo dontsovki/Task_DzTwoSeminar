@@ -1,7 +1,20 @@
 ﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-Console.Write("введите любое трёхзначное число");
-string username = Console.ReadLine();
-int[] array = new int[2];
+
+Console.Write("введите любое трёхзначное число ");
+string str = Console.ReadLine();
+   Console.WriteLine("Вы ввели не трехзначное число");
+char[] a=str.ToCharArray();
+Console.Write($"Второе число {a[1]} из числа {str}");
+
+//Console.Write("введите любое трёхзначное число");
+//string str = Console.ReadLine();
+//       Console.WriteLine(str is char[]);
+
+    
+
+//char[] str = s.ToCharArray();
+
+
 
 //int num = Convert.ToInt32(Console.ReadLine());
 //int lengt = num.ToString().Length;
